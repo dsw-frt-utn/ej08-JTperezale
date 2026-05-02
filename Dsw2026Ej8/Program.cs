@@ -38,6 +38,12 @@
 
             Console.WriteLine(p5.ObtenerImporteFinal(ventaMinorista));  // 1000
             Console.WriteLine(p5.ObtenerImporteFinal(ventaMayorista));  // 900
+
+            // Problema 6
+            var p6 = new Problema6();
+            Console.WriteLine(p6.NormalizarCodigoProducto(" ab 123 x "));  // AB-123-X
+            Console.WriteLine(p6.NormalizarCodigoProducto("hola mundo"));  // HOLA-MUNDO
+            Console.WriteLine(p6.NormalizarCodigoProducto(null));           // SIN-CODIGO
         }
     }
 }
