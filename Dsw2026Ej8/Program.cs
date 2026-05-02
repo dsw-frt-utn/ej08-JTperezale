@@ -31,6 +31,13 @@
             Console.WriteLine(p4.CalcularPromedio(8, -1, 10));      // -1 se ignora: promedio 9
             Console.WriteLine(p4.CalcularPromedio(8, 11, 10));      // 11 se ignora: promedio 9
 
+            // Problema 5
+            var p5 = new Problema5();
+            var ventaMinorista = new RetailSale(1000m);
+            var ventaMayorista = new WholesaleSale(1000m);
+
+            Console.WriteLine(p5.ObtenerImporteFinal(ventaMinorista));  // 1000
+            Console.WriteLine(p5.ObtenerImporteFinal(ventaMayorista));  // 900
         }
     }
 }
