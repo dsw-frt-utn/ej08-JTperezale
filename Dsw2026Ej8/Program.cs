@@ -17,6 +17,11 @@
             Console.WriteLine(p2.CrearResumenVenta(1001, "Coca Cola", 5, 1250.99m));
             Console.WriteLine(p2.CrearResumenVenta(2002, "Agua mineral", -1, 500m));
             Console.WriteLine(p2.CrearResumenVenta(3003, "Auriculares", 2, 12999.99m));
+
+            // Problema 3
+            var p3 = new Problema3();
+            var producto = new Product("Descripcion original");
+            Console.WriteLine(p3.CompararCopias(5, producto));
         }
     }
 }
